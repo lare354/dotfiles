@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:~/.cargo/bin:/home/lare/.local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:~/.cargo/bin:/home/$USER/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 #installation via script from github
