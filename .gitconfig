@@ -1,3 +1,9 @@
 [user]
 	name = lare354
 	email = lare354@duck.com
+[credential]
+	helper = 
+	helper = /sbin/git-credential-manager
+	credentialStore = gpg
+[credential "https://dev.azure.com"]
+	useHttpPath = true

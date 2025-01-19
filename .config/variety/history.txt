@@ -1,4 +1,11 @@
 1
+/usr/share/backgrounds/walls-catppuccin-mocha/soft-rose.jpg
+/usr/share/backgrounds/walls-catppuccin-mocha/jupiter.png
+/usr/share/backgrounds/walls-catppuccin-mocha/math.png
+/usr/share/backgrounds/walls-catppuccin-mocha/tree-optimism.png
+/usr/share/backgrounds/walls-catppuccin-mocha/pixel-reading.png
+/usr/share/backgrounds/walls-catppuccin-mocha/cabin.png
+/usr/share/backgrounds/walls-catppuccin-mocha/keyboard.png
 /usr/share/backgrounds/walls-catppuccin-mocha/city-harbor.png
 /usr/share/backgrounds/walls-catppuccin-mocha/marine-tunnel.jpg
 /usr/share/backgrounds/walls-catppuccin-mocha/calder-moore-aliencrack.jpg
@@ -93,10 +100,3 @@
 /usr/share/backgrounds/arcolinux/arco-login-plasma.jpg
 /usr/share/backgrounds/archlinux-login-backgrounds/att-03.jpg
 /usr/share/backgrounds/arcolinux/music-3072x2048.jpg
-/usr/share/backgrounds/archlinux-login-backgrounds/att-02.jpg
-/usr/share/backgrounds/archlinux-login-backgrounds/att-plain-04.png
-/usr/share/backgrounds/arcolinux/arco-login.jpg
-/usr/share/backgrounds/arcolinux/koi-fishes-1920x1080.png
-/usr/share/backgrounds/archlinux-login-backgrounds/att-04.jpg
-/usr/share/backgrounds/archlinux-login-backgrounds/att-plain-03.png
-/usr/share/backgrounds/arcolinux/keyboard-3648x2736.jpg
