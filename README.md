@@ -11,3 +11,5 @@ Wayland compositor: hyprland
 Bar: waybar  
 Editors: neovim / micro / amp  
 Background manager: variety  
+Background source: [walls-catppuccin-mocha by orangci](https://github.com/orangci/walls-catppuccin-mocha)  
+System monitor: bottom(btm)  
