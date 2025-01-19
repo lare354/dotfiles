@@ -128,8 +128,8 @@ export HISTCONTROL=ignoreboth:erasedups
 
 # Make nano the default editor
 
-export EDITOR='amp'
-export VISUAL='amp'
+export EDITOR='micro'
+export VISUAL='micro'
 
 #PS1='[\u@\h \W]\$ '
 
