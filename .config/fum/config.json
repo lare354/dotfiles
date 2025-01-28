@@ -1,0 +1,34 @@
+{
+  "players": ["spotify"],
+  "use_active_player": false,
+  "width": 40,
+  "height": 7,
+  "direction": "horizontal",
+  "layout": [
+    { "type": "cover-art", "width": 20 },
+    { "type": "empty", "size": 2 },
+    {
+      "type": "container",
+      "direction": "vertical",
+      "children": [
+        { "type": "label", "text": "󰝚 $title" },
+        { "type": "label", "text": "󰠃 $artists" },
+        { "type": "label", "text": "󰓎 get_meta(xesam:autoRating)" },
+        { "type": "label", "text": " get_meta(xesam:discNumber)" },
+        { "type": "container", "children": [] },
+        {
+          "type": "container",
+          "height": 1,
+          "children": [
+            { "type": "button", "text": "󰒮", "action": "prev()" },
+            { "type": "empty", "size": 3 },
+            { "type": "button", "text": "$status_icon", "action": "play_pause()" },
+            { "type": "empty", "size": 3 },
+            { "type": "button", "text": "󰒭", "action": "next()" }
+          ]
+        },
+        { "type": "progress", "progress": { "char": "" }, "empty": { "char": "-" } }
+      ]
+   }
+  ]
+}
