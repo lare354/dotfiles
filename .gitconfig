@@ -4,3 +4,5 @@
 [credential]
 	helper = /sbin/git-credential-manager
 	credentialStore = gpg
+[pull]
+	ff = true
