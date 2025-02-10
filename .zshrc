@@ -585,7 +585,7 @@ rsftch -o ArchLinux
 
 eval $(thefuck --alias)
 eval "$(zoxide init zsh)"
-. /opt/asdf-vm/asdf.sh
+#. /opt/asdf-vm/asdf.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
