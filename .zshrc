@@ -141,7 +141,7 @@ alias cd='z'
 
 #paru
 alias p='paru'
-alias c='echo "\n\033[0;35m:: \033[1;37mupdating crates...\n" && cargo install-update --all'
+alias c='echo "\n\033[0;35m:: \033[1;37mupdating crates...\n\033[0;01m" && cargo install-update --all'
 alias pc='p && c'
 
 #enhanced rm & cp
@@ -169,6 +169,7 @@ alias depends='function_depends'
 #fix obvious typo's
 alias cd..='cd ..'
 alias pdw='pwd'
+alias sl='ls'
 
 ## Colorize the grep command output for ease of use (good for log files)##
 alias grep='grep --color=auto'
