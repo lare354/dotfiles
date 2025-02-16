@@ -3,7 +3,7 @@
 # Colors
 bg='1e1e2e' bgl='313244' fg='d9e0ee'
 red='f38ba8' green='a6e3a1' yellow='f9e2af'
-blue='89b4fa' magenta='cba6f7' cyan='89dceb'
+blue='b4befe' magenta='cba6f7' cyan='89dceb'
 alpha='00000000'
 
 # CMD
@@ -16,9 +16,9 @@ swaylock -f \
 	`# Appearance - change CC to your desired transparency` \
 	--color ${bg}FF \
 	`#--image ${IMAGE} --scaling fill` \
-	--font 'Noto Sans' --font-size 30 \
+	--font 'FantasqueSansMono Nerd Font' --font-size 32 \
 	`# Backspace Key` \
-	--key-hl-color ${green} \
+	--key-hl-color ${yellow} \
 	--caps-lock-key-hl-color ${blue} \
 	--bs-hl-color ${red} \
 	--caps-lock-bs-hl-color ${red} \
@@ -42,7 +42,7 @@ swaylock -f \
 	--line-ver-color ${bg} \
 	--line-wrong-color ${bg} \
 	`# Ring Colors` \
-	--ring-color ${cyan} \
+	--ring-color ${magenta} \
 	--ring-clear-color ${bg} \
 	--ring-caps-lock-color ${magenta} \
 	--ring-ver-color ${blue} \
