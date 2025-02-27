@@ -17,7 +17,7 @@ export FZF_DEFAULT_OPTS=" \
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # if you installed the package oh-my-zsh-powerline-theme-git then you type here "powerline" as zsh theme
-ZSH_THEME="fino"
+ZSH_THEME="fino-time"
 
 export "MICRO_TRUECOLOR=1"
 
@@ -313,6 +313,7 @@ rsftch -o ArchLinux
 
 eval $(thefuck --alias)
 eval "$(zoxide init zsh)"
+eval "$(starship init zsh)"
 #. /opt/asdf-vm/asdf.sh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
