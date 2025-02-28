@@ -59,7 +59,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rust zoxide fzf zsh-autosuggestions eza cp archlinux gitfast kitty)
+plugins=(git wd rust zoxide fzf zsh-autosuggestions eza cp archlinux gitfast kitty)
 
 if [ -f $ZSH/oh-my-zsh.sh ]; then
   source $ZSH/oh-my-zsh.sh
@@ -135,6 +135,9 @@ alias grep='batgrep'
 #paru wrappers
 alias pi='parui'
 alias pz='paruz'
+
+# ctrl-b to open the fzf browser
+bindkey ${FZF_WD_BINDKEY:-'^B'} wd_browse_widget
 
 #zoxide
 alias cd='z'
