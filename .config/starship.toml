@@ -3,17 +3,11 @@ palette = 'catppuccin_mocha'
 format = """
 [░▒▓](surface1)\
 [ 󰣇 ](bg:surface1 fg:blue)\
-[](bg:mauve fg:surface1)\
-$directory\
-[](bg:surface1 fg:mauve)\
-$git_branch\
-$git_status\
 [](bg:surface0 fg:surface1)\
-$nodejs\
-$rust\
-$golang\
-$php\
-[](bg:mantle fg:surface0)\
+$username\
+[](bg:mauve fg:surface0)\
+$directory\
+[](bg:mantle fg:mauve)\
 $time\
 [ ](fg:mantle)\
 \n$character"""
@@ -24,46 +18,23 @@ format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
+[username]
+show_always = true
+style_user = "bg:surface0 fg:mauve"
+style_root = "bg:surface0 fg:mauve"
+format = '[ $user ]($style)'
+
 [directory.substitutions]
 "Documents" = "󰈙 "
 "Downloads" = " "
 "Music" = " "
 "Pictures" = " "
 
-[git_branch]
-symbol = ""
-style = "bg:surface1 fg:mauve"
-format = '[ $symbol $branch]($style)'
-
-[git_status]
-style = "bg:surface1 fg:mauve"
-format = '[($all_status$ahead_behind)]($style)'
-
-[nodejs]
-symbol = ""
-style = "bg:surface0 fg:mauve"
-format = '[ $symbol ($version)]($style)'
-
-[rust]
-symbol = ""
-style = "bg:surface0 fg:mauve"
-format = '[ $symbol ($version)]($style)'
-
-[golang]
-symbol = ""
-style = "bg:surface0 fg:mauve"
-format = '[ $symbol ($version)]($style)'
-
-[php]
-symbol = ""
-style = "bg:surface0 fg:mauve"
-format = '[ $symbol ($version)]($style)'
-
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:mantle fg:overlay1"
-format = '[   $time ]($style)'
+format = '[  $time ]($style)'
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
@@ -95,6 +66,5 @@ crust = "#11111b"
 
 [character]
 disabled = false
-symbol = ""
 success_symbol = '[ ](bold fg:mauve)'
 error_symbol = '[ ](bold fg:red)'
