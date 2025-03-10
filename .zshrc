@@ -17,7 +17,7 @@ export FZF_DEFAULT_OPTS=" \
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 # if you installed the package oh-my-zsh-powerline-theme-git then you type here "powerline" as zsh theme
-ZSH_THEME="fino-time"
+#ZSH_THEME="fino-time"
 
 export "MICRO_TRUECOLOR=1"
 
