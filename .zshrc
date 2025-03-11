@@ -132,8 +132,7 @@ alias listdir="eza -Fd */ > list"
 alias man='batman'
 alias grep='batgrep'
 
-#paru wrappers
-alias pi='parui'
+#paru wrapper
 alias pz='paruz'
 
 # ctrl-b to open the fzf browser
