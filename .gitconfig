@@ -1,8 +1,0 @@
-[user]
-	name = lare354
-	email = lare354@duck.com
-[credential]
-	helper = /sbin/git-credential-manager
-	credentialStore = gpg
-[pull]
-	ff = true
