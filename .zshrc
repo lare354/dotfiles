@@ -143,8 +143,8 @@ alias cd='z'
 
 #paru
 alias p='paru'
-alias c='echo "\n\033[0;35m:: \033[1;37mupdating crates...\n\033[0;01m" && cargo install-update --all'
-alias pc='p && c'
+alias cargoupdate='echo "\n\033[0;35m:: \033[1;37mupdating crates...\n\033[0;01m" && cargo install-update --all'
+alias pc='p && cargoupdate'
 
 #enhanced rm & cp
 alias rm='rmz'
