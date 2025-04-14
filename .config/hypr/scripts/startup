@@ -28,6 +28,9 @@ ${SCRIPTSDIR}/notifications &
 # Lauch statusbar (waybar)
 ${SCRIPTSDIR}/statusbar &
 
+# Launch greenclip daemon
+clipcatd &
+
 # Xauthority
 ${SCRIPTSDIR}/xauthority &
 
