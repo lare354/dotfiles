@@ -1,0 +1,153 @@
+{
+  "players": ["spotify"],
+  "keybinds": {
+    "s;S": "next()",
+    "n;N": "next()",
+    "p;P": "play_pause()",
+    "-;_;down": "volume(-5)",
+    "left": "volume(-1)",
+    "+;=;up": "volume(+5)",
+    "right": "volume(+1)",
+    "q;Q": "quit()"
+  },
+  "width": 31,
+  "height": 5,
+  "border": true,
+  "padding": [2, 1],
+  "layout": [
+    {
+      "type": "container",
+      "direction": "vertical",
+      "children": [
+        {
+          "type": "container",
+          "children": [
+            {
+              "type": "container",
+              "width": 7,
+              "children": [
+                {
+                  "type": "button",
+                  "text": "$status-text",
+                  "action": "play_pause()"
+                }
+              ]
+            },
+            { "type": "empty", "size": 1 },
+            { "type": "label", "text": "$title", "bold": true }
+          ]
+        },
+        {
+          "type": "container",
+          "children": [
+            { "type": "empty", "size": 1 },
+            {
+              "type": "container",
+              "children": [
+                { "type": "button", "text": "[" },
+                {
+                  "type": "progress",
+                  "progress": { "char": "/" },
+                  "empty": { "char": " " }
+                },
+                { "type": "button", "text": "]" }
+              ]
+            },
+            { "type": "empty", "size": 1 },
+            {
+              "type": "container",
+              "width": 11,
+              "children": [
+                { "type": "button", "text": "$position" },
+                { "type": "button", "text": "/" },
+                {
+                  "type": "button",
+                  "text": "var($length-style, $length)",
+                  "action": "toggle($length-style, $length, $remaining-length)"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "children": [
+            { "type": "empty", "size": 1 },
+            {
+              "type": "container",
+              "width": 7,
+              "children": [{ "type": "label", "text": "volume:" }]
+            },
+            { "type": "empty", "size": 1 },
+            {
+              "type": "container",
+              "children": [
+                { "type": "button", "text": "[" },
+                {
+                  "type": "volume",
+                  "volume": { "char": "/" },
+                  "empty": { "char": " " }
+                },
+                { "type": "button", "text": "]" }
+              ]
+            },
+            { "type": "empty", "size": 1 },
+            {
+              "type": "container",
+              "width": 4,
+              "children": [{ "type": "label", "text": "$volume%" }]
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "flex": "space-between",
+          "children": [
+            // { "type": "button", "text": "[s]kip", "action": "next()" },
+            // { "type": "button", "text": "[p]ause", "action": "play_pause()" },
+            // { "type": "button", "text": "[q]uit", "action": "quit()" }
+            {
+              "type": "container",
+              "width": 6,
+              "children": [
+                {
+                  "type": "button",
+                  "text": "[s]",
+                  "action": "next()",
+                  "bold": true
+                },
+                { "type": "button", "text": "kip", "action": "next()" }
+              ]
+            },
+            {
+              "type": "container",
+              "width": 7,
+              "children": [
+                {
+                  "type": "button",
+                  "text": "[p]",
+                  "action": "play_pause()",
+                  "bold": true
+                },
+                { "type": "button", "text": "ause", "action": "play_pause()" }
+              ]
+            },
+            {
+              "type": "container",
+              "width": 6,
+              "children": [
+                {
+                  "type": "button",
+                  "text": "[q]",
+                  "action": "quit()",
+                  "bold": true
+                },
+                { "type": "button", "text": "uit", "action": "quit()" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
