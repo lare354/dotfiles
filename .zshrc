@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:~/.cargo/bin:/home/$USER/.local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:~/.cargo/bin:/home/$USER/.local/bin:$PATH:/opt/brew/bin:$HOME/go/bin
 
 # Path to your oh-my-zsh installation.
 #installation via script from github
@@ -88,8 +88,8 @@ export HISTCONTROL=ignoreboth:erasedups
 
 # Make nano the default editor
 
-export EDITOR='micro'
-export VISUAL='micro'
+export EDITOR='micro -clipboard terminal'
+export VISUAL='micro -clipboard terminal'
 
 #PS1='[\u@\h \W]\$ '
 
@@ -117,7 +117,7 @@ export BATPIPE;
 
 #micro
 alias n='nano'
-alias m='micro'
+alias m='micro -clipboard terminal'
 
 #list
 alias eza='eza --icons always --color auto '
