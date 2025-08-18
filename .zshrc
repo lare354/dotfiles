@@ -147,8 +147,8 @@ alias cargoupdate='echo "\n\033[0;35m:: \033[1;37mupdating crates...\n\033[0;01m
 alias pc='p && cargoupdate'
 
 #enhanced rm & cp
-alias rm='rmz'
-alias cp='cpz'
+#alias rm='rmz'
+#alias cp='cpz'
 
 #oneshot
 alias oneshot='doas /src/OneShot-C/oneshot -i wlp1s0 -K'
