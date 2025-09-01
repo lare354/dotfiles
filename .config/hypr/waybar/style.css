@@ -10,7 +10,7 @@
  * Keyframes
  * -------------------------------------------------------------------------- */
 
-@import "machiatto.css";
+@import "mocha.css";
 
 /*
 Polar Night
@@ -121,8 +121,6 @@ window#waybar {
 #memory,
 #idle_inhibitor,
 #temperature,
-#custom-keyboard-layout,
-#language,
 #backlight,
 #network,
 #pulseaudio,
@@ -340,18 +338,18 @@ window#waybar {
     margin-bottom: 3px;
 }
 
-#custom-keyboard-layout {
+/*#custom-keyboard-layout {
     color: @peach;
     border-radius: 10px;
     margin-right: 10px;
-}
+}*/
 
-#language {
+/* #language {
     color: @peach;
-    /* border-bottom: 2px solid @peach; */
+    border-bottom: 2px solid @peach;
     border-radius: 10px;
     margin-right: 10px;
-}
+} */
 
 /* window#waybar {
     background: #2d2a2e;
