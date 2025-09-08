@@ -1,8 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:~/.cargo/bin:/home/$USER/.local/bin:$PATH:/opt/brew/bin:$HOME/go/bin
 
-# Path to your oh-my-zsh installation.
-#installation via script from github
 export ZSH="/home/$USER/.oh-my-zsh"
 #installation via paru -S oh-my-zsh-git
 #export ZSH=/usr/share/oh-my-zsh/
@@ -115,7 +113,7 @@ export BATPIPE;
 
 #micro
 alias n='nano'
-alias m='micro -clipboard terminal'
+alias m='micro -clipboard external'
 
 #list
 alias eza='eza --icons always --color auto '
