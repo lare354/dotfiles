@@ -304,8 +304,6 @@ alias btrfsli="sudo btrfs su li / -t"
 #fetch
 #hfetch
 #sfetch
-#ufetch
-#ufetch-arco
 #pfetch
 #sysinfo
 #sysinfo-retro
