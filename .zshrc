@@ -28,8 +28,6 @@ export "MICRO_TRUECOLOR=1"
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
 
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to automatically update without prompting.
 # DISABLE_UPDATE_PROMPT="true"
@@ -88,8 +86,8 @@ export HISTCONTROL=ignoreboth:erasedups
 
 # Make nano the default editor
 
-export EDITOR='micro -clipboard terminal'
-export VISUAL='micro -clipboard terminal'
+export EDITOR='micro -clipboard external'
+export VISUAL='micro -clipboard external'
 
 #PS1='[\u@\h \W]\$ '
 
