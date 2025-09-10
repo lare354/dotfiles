@@ -177,7 +177,7 @@ alias fix-pacman-conf="/usr/local/bin/arcolinux-fix-pacman-conf"
 alias fix-pacman-keyserver="/usr/local/bin/arcolinux-fix-pacman-gpg-conf"
 alias fixgrub="/usr/local/bin/arcolinux-fix-grub"
 
-rsftch -o ArchLinux
+crab-fetch
 
 eval $(thefuck --alias)
 eval "$(zoxide init zsh)"
