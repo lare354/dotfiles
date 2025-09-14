@@ -10,6 +10,10 @@ export FZF_DEFAULT_OPTS=" \
 
 export "MICRO_TRUECOLOR=1"
 
+if [[ $UID -eq 0 ]]; then
+  HISTFILE="${HISTFILE%_history}_root_history"
+fi
+
 
 # Case-sensitive completion must be off. _ and - will be interchangeable.
 HYPHEN_INSENSITIVE="true"
