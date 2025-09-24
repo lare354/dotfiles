@@ -28,13 +28,11 @@ ${SCRIPTSDIR}/notifications &
 # Lauch statusbar (waybar)
 ${SCRIPTSDIR}/statusbar &
 
-# Launch greenclip daemon
+# Launch clipcat daemon
 clipcatd &
 
 # Xauthority
 ${SCRIPTSDIR}/xauthority &
-
-dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
 
 #insync start &
 #dropbox &

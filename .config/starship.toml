@@ -66,5 +66,5 @@ crust = "#11111b"
 
 [character]
 disabled = false
-success_symbol = '[ ](bold fg:mauve)'
-error_symbol = '[ ](bold fg:red)'
+success_symbol = '[  ](bold fg:mauve)'
+error_symbol = '[  ](bold fg:red)'
