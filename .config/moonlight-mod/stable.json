@@ -1,0 +1,160 @@
+{
+  "extensions": {
+    "moonbase": true,
+    "disableSentry": true,
+    "noTrack": true,
+    "noHideToken": true,
+    "betterTags": true,
+    "betterUploadButton": true,
+    "callIdling": true,
+    "callTimer": true,
+    "clearUrls": true,
+    "cloneExpressions": true,
+    "componentEditor": true,
+    "copyWebp": true,
+    "decor": true,
+    "displaySummaries": true,
+    "dmDates": true,
+    "dmFavorites": true,
+    "domOptimizer": true,
+    "doubleClickActions": true,
+    "experiments": {
+      "enabled": true,
+      "config": {
+        "devtools": true
+      }
+    },
+    "imageViewer": true,
+    "jumpToBlocked": true,
+    "levantine": false,
+    "mediaTweaks": true,
+    "memberCount": true,
+    "muteGuildOnJoin": true,
+    "nativeFixes": {
+      "enabled": false,
+      "config": {
+        "vulkan": true,
+        "linuxAutoscroll": true,
+        "waylandExplicitSync": true,
+        "disableFontations": true,
+        "zeroCopy": true
+      }
+    },
+    "nicknameTools": true,
+    "neatSettingsContext": true,
+    "noHelp": true,
+    "onePingPerDM": true,
+    "platformIcons": true,
+    "pronouns": true,
+    "quietLoggers": false,
+    "replyChain": true,
+    "resolver": true,
+    "rocketship": false,
+    "sendTimestamps": true,
+    "showMediaOptions": true,
+    "silenceTyping": true,
+    "staffTags": true,
+    "betterCodeblocks": true,
+    "betterEmbedsYT": true,
+    "copyAvatarUrl": true,
+    "freeScreenShare": true,
+    "freeMoji": true,
+    "highlight": true,
+    "imgTitle": true,
+    "inviteToNowhere": true,
+    "mentionAvatars": true,
+    "reverseImageSearch": true,
+    "showAllRoles": true,
+    "showVoiceMemberCount": true,
+    "spotifySpoof": true,
+    "svgEmbed": true,
+    "moonlight-css": {
+      "enabled": true,
+      "config": {
+        "paths": [
+          "https://catppuccin.github.io/discord/dist/catppuccin-mocha-mauve.theme.css"
+        ],
+        "themeAttributes": true
+      }
+    },
+    "meow": {
+      "enabled": true,
+      "config": {
+        "woof": false
+      }
+    },
+    "antiDelete": true,
+    "alwaysShowForwardTime": false,
+    "alwaysFocus": true,
+    "allActivities": true,
+    "keybindTweaks": {
+      "enabled": true,
+      "config": {
+        "disableCallStart": true
+      }
+    },
+    "noNotificationSoundExceptDms": true,
+    "noReplyChainNag": true,
+    "translateText": true,
+    "unindent": true,
+    "unminifyReactErrors": true,
+    "viewJson": true,
+    "voiceStateSuppressor": true,
+    "whosWatching": true,
+    "doubleClickToJoin": {
+      "enabled": true,
+      "config": {
+        "timeoutMs": 500
+      }
+    },
+    "spacepack": {
+      "config": {
+        "addToGlobalScope": true
+      }
+    },
+    "devToolsExtensions": {
+      "enabled": true,
+      "config": {
+        "paths": [
+          "/src/react/packages/react-devtools-extensions/chrome/build/unpacked/"
+        ]
+      }
+    },
+    "questCompleter": true,
+    "typingTweaks": true,
+    "noNitroUpsell": true,
+    "linkRedirect": true,
+    "appPanels": true,
+    "cleanChatBar": {
+      "enabled": true,
+      "config": {
+        "removedButtons": [
+          "gift",
+          "activity"
+        ]
+      }
+    },
+    "antinonce": true,
+    "userpfp": true,
+    "freeStickers": true,
+    "popoutDates": true,
+    "streamQualityWorkaround": true,
+    "quickDelete": {
+      "enabled": true,
+      "config": {
+        "useDelete": false
+      }
+    },
+    "noOnboardingDelay": true
+  },
+  "repositories": [
+    "https://moonlight-mod.github.io/extensions-dist/repo.json",
+    "https://cynosphere.github.io/schirra/repo.json",
+    "https://lare354.github.io/moonlight-plugins/repo.json"
+  ],
+  "loggerLevel": "trace",
+  "devSearchPaths": [
+    "/src/moonlight-plugins/dist/"
+  ],
+  "patchAll": true
+}
