@@ -1,7 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:~/.cargo/bin:/home/$USER/.local/bin:$PATH:/opt/brew/bin:$HOME/go/bin
 
-export ZSH="/home/$USER/.oh-my-zsh"
+wd() {
+  . /usr/share/wd/wd.sh
+}
 
 export FZF_DEFAULT_OPTS=" \
 --color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
@@ -22,18 +24,11 @@ HYPHEN_INSENSITIVE="true"
 COMPLETION_WAITING_DOTS="true"
 
 # Which plugins would you like to load?
-# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git wd rust zoxide fzf zsh-autosuggestions eza archlinux gitfast kitty)
 
-if [ -f $ZSH/oh-my-zsh.sh ]; then
-  source $ZSH/oh-my-zsh.sh
-fi
-fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
-
-export PAGER='most'
+export PAGER='less'
 
 source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
 
