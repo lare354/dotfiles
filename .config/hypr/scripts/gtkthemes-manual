@@ -5,7 +5,7 @@
 THEME='Arc-Dark'
 ICONS='a-candy-beauty-icon-theme'
 FONT='Noto Sans 11'
-CURSOR='Bibata-Modern-Ice'
+CURSOR='catppuccin-mocha-mauve-cursors'
 
 SCHEMA='gsettings set org.gnome.desktop.interface'
 
