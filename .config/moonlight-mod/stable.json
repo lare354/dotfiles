@@ -31,7 +31,7 @@
     "memberCount": true,
     "muteGuildOnJoin": true,
     "nativeFixes": {
-      "enabled": false,
+      "enabled": true,
       "config": {
         "vulkan": true,
         "linuxAutoscroll": true,
@@ -84,7 +84,7 @@
       }
     },
     "antiDelete": true,
-    "alwaysShowForwardTime": false,
+    "alwaysShowForwardTime": true,
     "alwaysFocus": true,
     "allActivities": true,
     "keybindTweaks": {
@@ -145,7 +145,10 @@
         "useDelete": false
       }
     },
-    "noOnboardingDelay": true
+    "noOnboardingDelay": true,
+    "colorConsistency": true,
+    "devBanner": true,
+    "volumeManipulator": true
   },
   "repositories": [
     "https://moonlight-mod.github.io/extensions-dist/repo.json",
