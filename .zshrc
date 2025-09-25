@@ -103,8 +103,8 @@ export HISTCONTROL=ignoreboth:erasedups
 
 # Make micro the default editor
 
-export EDITOR='micro -clipboard external'
-export VISUAL='micro -clipboard external'
+export EDITOR='micro'
+export VISUAL='micro'
 
 
 LESSOPEN="|/sbin/batpipe %s";
@@ -122,7 +122,7 @@ export BATPIPE;
 
 #micro
 alias n='nano'
-alias m='micro -clipboard external'
+alias m='micro'
 
 #list
 alias eza='eza --icons always --color auto '
