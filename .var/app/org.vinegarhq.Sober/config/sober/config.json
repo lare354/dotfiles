@@ -10,7 +10,7 @@
     "close_on_leave": false,
     "discord_rpc_enabled": false,
     "enable_gamemode": false,
-    "enable_hidpi": false,
+    "enable_hidpi": true,
     "fflags": {
         "DFIntCSGLevelOfDetailSwitchingDistance": "250",
         "DFIntCSGLevelOfDetailSwitchingDistanceL12": "500",

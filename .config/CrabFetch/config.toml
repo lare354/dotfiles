@@ -118,7 +118,7 @@ bold = true
 # - "os" uses the OS color to color the ASCII in a solid color.
 # - "solid" fills the ASCII with a solid color.
 # - "band" colors the ascii in a band/flag format.
-mode = "solid"
+mode = "os"
 
 # ONLY REQUIRED IF YOU SET THE MODE TO BE "solid"
 # The color to fill the ASCII with.
