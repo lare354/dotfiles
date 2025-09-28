@@ -13,26 +13,27 @@
 }
 
 element-text, element-icon , mode-switcher {
-    background-color: inherit;
-    text-color:       inherit;
+    background-color:   inherit;
+    text-color:         inherit;
 }
 
 window {
-    height: 360px;
-    border: 3px;
-    border-color: @border-col;
-    background-color: @bg-col;
+    height:             360px;
+    border:             3px;
+    border-radius:      10px;
+    border-color:       @border-col;
+    background-color:   @bg-col;
 }
 
 mainbox {
-    background-color: @bg-col;
+    background-color:   @bg-col;
 }
 
 inputbar {
-    children: [prompt,entry];
-    background-color: @bg-col;
-    border-radius: 5px;
-    padding: 2px;
+    children:           [prompt,entry];
+    background-color:   @bg-col;
+    border-radius:      5px;
+    padding:            2px;
 }
 
 prompt {
