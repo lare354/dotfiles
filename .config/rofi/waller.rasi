@@ -11,10 +11,10 @@ configuration {
 //----- Global Properties -----//
 
 * {
-main-bg:                    #1e1e2e;
-main-fg:                    #cdd6f4;
-select-bg:                  #cba6f7;
-select-fg:                  #11111b;
+    main-bg:                #1e1e2e;
+    main-fg:                #cdd6f4;
+    select-bg:              #cba6f7;
+    select-fg:              #11111b;
 }
 
 //----- Main Window -----//
@@ -44,22 +44,24 @@ mainbox {
 //----- Listview -----//
 
 listview {
-    margin:                 10px 10px 10px 10px;
     columns:                4;
     lines:                  1;
     background-color:       @main-bg;
     cycle:                  true;
+
 }
 
 //----- Elements -----//
 
 element {
+    children: [ element-icon, element-text ];
     enabled:                true;
-    orientation:            horizontal;
+    orientation:            vertical;
     border-radius:          10px;
     cursor:                 pointer;
     background-color:       transparent;
     text-color:             @main-fg;
+    spacing:                0px;
 }
 
 element selected.normal {
@@ -70,10 +72,8 @@ element selected.normal {
 element-icon {
     size:                   300px;
     cursor:                 inherit;
-    border-radius:          5px;
+    border-radius:          10px;
     background-color:       transparent;
-    text-color:             inherit;
-    horizontal-align:       0.5;
 }
 
 
