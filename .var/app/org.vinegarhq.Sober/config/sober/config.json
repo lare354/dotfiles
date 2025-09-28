@@ -33,7 +33,6 @@
         "FFlagDebugGraphicsDisableDirect3D11": "True",
         "FFlagDebugGraphicsPreferVulkan": "True",
         "FFlagDebugRenderingSetDeterministic": "True",
-        "FFlagDisablePostFx": "true",
         "FFlagExample": true,
         "FFlagOptimizeNetwork": "True",
         "FFlagOptimizeNetworkRouting": "True",
