@@ -1,9 +1,5 @@
 #!/bin/bash
 
-#wallpaper fetcher and wallpaper rotator
-#type "var" in a terminal to change settings - example
-#variety &
-
 SCRIPTSDIR=$HOME/.config/hypr/scripts
 
 # Kill already running process
@@ -28,11 +24,11 @@ ${SCRIPTSDIR}/statusbar &
 # Launch clipcat daemon
 clipcatd &
 
+# Launch swww (wallpaper manager)
+swww-daemon &
+#hyprpaper &
+
 # Xauthority
 ${SCRIPTSDIR}/xauthority &
 
-#insync start &
-#dropbox &
-#telegram-desktop &
-#discord &
 nm-applet --indicator &
