@@ -1,8 +1,17 @@
 #!bin/bash
 
+#    ▖  ▖  ▜ ▜             
+#    ▌▞▖▌▀▌▐ ▐ █▌▛▘        
+#    ▛ ▝▌█▌▐▖▐▖▙▖▌         
+#                          
+#    ▗▄▖▜       ▄▖▄▖▖▖   ▄▖
+#    ▌▄▐▐ ▀▌▛▘█▌▄▌▙▖▙▌  ▘▄▌
+#    ▌▀▀▐▖█▌▌ ▙▖▄▌▄▌ ▌  ▖▄▌
+#     ▀                                                                                    
 
-#walls dir
+#wallpaper dir
 wallsDir="/usr/share/wallpapers/walls-catppuccin-mocha/"
+
 rofiCmd="rofi -dmenu -theme ~/.config/rofi/waller.rasi"
 
 # Select a picture with rofi
