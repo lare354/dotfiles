@@ -114,6 +114,6 @@
   "patchAll": true,
   "loggerLevel": "info",
   "devSearchPaths": [
-    "/src/moonlight-plugins/dist/"
+    "/src/moonlight-plugins/dist/questCompleter"
   ]
 }

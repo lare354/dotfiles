@@ -9,8 +9,6 @@
 #    ▌▀▀▐▖█▌▌ ▙▖▄▌▄▌ ▌  ▖▄▌
 #     ▀                                                                                    
 
-#wallpaper dir
-wallsDir="/usr/share/wallpapers/walls-catppuccin-mocha/"
 rofiCmd="rofi -dmenu -theme ~/.config/rofi/waller.rasi"
 
 cacheDir=$HOME/.cache/waller
@@ -21,11 +19,11 @@ if [ ! -d "$cacheDir" ]; then
 	mkdir $cacheDir	
 fi
 
-if [ ! -d "$conf" ]; then
+if [ ! -f "$conf" ]; then
 	if [ ! -d "$confDir" ]; then
 		mkdir $confDir
 	fi 
-	echo blur=False > $confDir/waller.conf
+	printf '# enable/disable blur (true/false) \nblur=false \n\n# path to wallpaper directory \n#wallsDir="/usr/share/wallpapers/" \n\n# use soft blur (true/false) \nsoftBlur=true' > $confDir/waller.conf
 fi
 
 . $confDir/waller.conf
@@ -37,14 +35,20 @@ wallSelection=$(for wall in "$wallsDir"*; do echo -en "$wall\0icon\x1fthumbnail:
 # Set the wallpaper
 [[ -n "$wallSelection" ]] || exit 1
 
-if [ ! $blur ]; then
+if ! $blur; then
 	swww img ${wallSelection}
 	exit 0	
 fi
 
+blurLvl="0x4"
+
+if ! $softBlur; then
+	blurLvl="0x8"
+fi
+
 wallName=$(basename "${wallSelection}")
 
-magick ${wallSelection} -scale 50% -blur 0x4 -resize 200% "${cacheDir}/blurred_${wallName}" 
+magick ${wallSelection} -scale 50% -blur "${blurLvl}" -resize 200% "${cacheDir}/blurred_${wallName}" 
 
 swww img "${cacheDir}/blurred_${wallName}"
 
