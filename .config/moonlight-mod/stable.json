@@ -108,7 +108,7 @@
   },
   "repositories": [
     "https://moonlight-mod.github.io/extensions-dist/repo.json",
-    "https://lare354.github.com/moonlight-plugins/repo.json",
+    "https://lare354.github.io/moonlight-plugins/repo.json",
     "https://cynosphere.github.io/schirra/repo.json"
   ],
   "patchAll": true,
