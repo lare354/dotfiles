@@ -31,7 +31,7 @@
         ]
       }
     },
-    "decor": true,
+    "decor": false,
     "devBanner": true,
     "copyWebp": true,
     "copyAvatarUrl": true,
