@@ -104,7 +104,8 @@
       "config": {
         "addToGlobalScope": true
       }
-    }
+    },
+    "questCompleter2": true
   },
   "repositories": [
     "https://moonlight-mod.github.io/extensions-dist/repo.json",
