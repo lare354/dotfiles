@@ -10,10 +10,10 @@ modules = [
     "cpu",
     "gpu",
     "memory",
-    "swap",
+#    "swap",
     "mounts",
     "host",
-    "displays",
+#    "displays",
 
     "os",
     "packages",
@@ -22,14 +22,14 @@ modules = [
     "shell",
 #    "editor",
 #    "uptime",
-    "locale",
+#    "locale",
     "theme",
     "initsys",
     "processes",
-    "battery",
+#    "battery",
 #    "localip",
 
-    "space",
+#    "space",
     "colors",
     "bright_colors"
 ]
@@ -63,15 +63,15 @@ inline_values = true
 underline_character = '―'
 
 # The character for each color in the colors module
-color_character = "   "  # circle: ""
+color_character = ""  # circle: ""
 # Margin between each character
-color_margin = 0
+color_margin = 1
 # And if to set the color to the background instead of on the character
-color_use_background = true # Set to false if using something like the circle above
+color_use_background = false # Set to false if using something like the circle above
 
 # Whether to use the distro's preferred color for the title and ASCII displays
 # Disable to use custom default title colors, or custom ASCII colors
-use_os_color = true
+use_os_color = false
 
 # Format of segments
 # Segments can be defined in the modules array
@@ -109,7 +109,7 @@ display = true
 # Which side of the modules to display the ASCII on, left, right, top or bottom
 side = "left"
 # The amount of space to put between the ASCII and the info
-margin = 4
+margin = 3
 # Embolen the ASCII
 bold = true
 
@@ -118,11 +118,11 @@ bold = true
 # - "os" uses the OS color to color the ASCII in a solid color.
 # - "solid" fills the ASCII with a solid color.
 # - "band" colors the ascii in a band/flag format.
-mode = "os"
+mode = "solid"
 
 # ONLY REQUIRED IF YOU SET THE MODE TO BE "solid"
 # The color to fill the ASCII with.
-solid_color = "bright_magenta"
+solid_color = "magenta"
 
 # ONLY REQUIRED IF YOU SET THE MODE TO BE "band" OR "bandhorizontal"
 # The array of colors to fill the ASCII with.

@@ -20,6 +20,7 @@
     "callTimer": true,
     "cleanChatBar": true,
     "clearUrls": true,
+    "unminifyReactErrors": true,
     "colorConsistency": true,
     "cloneExpressions": true,
     "moonlight-css": {
@@ -104,8 +105,7 @@
       "config": {
         "addToGlobalScope": true
       }
-    },
-    "questCompleter2": true
+    }
   },
   "repositories": [
     "https://moonlight-mod.github.io/extensions-dist/repo.json",
