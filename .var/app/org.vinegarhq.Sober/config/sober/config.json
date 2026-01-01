@@ -9,6 +9,7 @@
     "allow_gamepad_permission": false,
     "close_on_leave": false,
     "discord_rpc_enabled": false,
+    "discord_rpc_show_join_button": false,
     "enable_gamemode": false,
     "enable_hidpi": true,
     "fflags": {
@@ -41,6 +42,7 @@
         "FFlagRenderCheckThreading": "True",
         "FIntRakNetResendBufferArrayLength": "128"
     },
+    "graphics_optimization_mode": "balanced",
     "server_location_indicator_enabled": true,
     "touch_mode": "off",
     "use_console_experience": false,

@@ -138,7 +138,7 @@ alias man='batman'
 alias grep='batgrep'
 
 #paru wrapper
-alias pz='paruz'
+alias pz="paru -Slq | fzf --multi --preview 'paru -Si {1}' | xargs -ro paru -S"
 
 # ctrl-b to open the fzf browser
 bindkey ${FZF_WD_BINDKEY:-'^B'} wd_browse_widget
