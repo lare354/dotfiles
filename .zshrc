@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:~/.cargo/bin:/home/$USER/.local/bin:$PATH:/opt/brew/bin:$HOME/go/bin
+export PATH=$HOME/bin:/usr/local/bin:~/.cargo/bin:/home/$USER/.local/bin:$PATH:/home/linuxbrew/.linuxbrew/bin:$HOME/go/bin
 
 # create a zkbd compatible hash;
 # to add other keys to this hash, see: man 5 terminfo
@@ -82,6 +82,8 @@ zstyle ':completion:*' matcher-list '' 'm:{[:lower:][:upper:]}={[:upper:][:lower
 zstyle ':completion:*' verbose true
 zstyle :compinstall filename '/home/lare/.zshrc'
 
+eval "$(brew shellenv)" 
+
 autoload -Uz compinit
 compinit
 
@@ -159,9 +161,6 @@ alias pz='paruz'
 
 # ctrl-b to open the fzf browser
 bindkey ${FZF_WD_BINDKEY:-'^B'} wd_browse_widget
-
-#zoxide
-alias cd='z'
 
 #paru
 alias p='paru'
