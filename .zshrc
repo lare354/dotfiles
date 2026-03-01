@@ -46,6 +46,23 @@ if (( ${+terminfo[smkx]} && ${+terminfo[rmkx]} )); then
 	add-zle-hook-widget -Uz zle-line-finish zle_application_mode_stop
 fi
 
+source ~/.zplug/init.zsh
+
+# Make sure to use double quotes
+zplug "zsh-users/zsh-history-substring-search"
+zplug "changyuheng/fz", defer:1
+zplug "rupa/z", use:z.sh
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check --verbose; then
+    printf "Install? [y/N]: "
+    if read -q; then
+        echo; zplug install
+    fi
+fi
+
+# Then, source plugins and add commands to $PATH
+zplug load
 
 wd() {
   . /usr/share/wd/wd.sh
@@ -142,9 +159,6 @@ pz () {paru -Sl | awk '{print $2($4=="" ? "" : " \*")}' | fzf -q "$1" -m --previ
 
 # ctrl-b to open the fzf browser
 bindkey ${FZF_WD_BINDKEY:-'^B'} wd_browse_widget
-
-#zoxide
-alias cd='z'
 
 #paru
 alias p='paru'
