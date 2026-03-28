@@ -24,9 +24,8 @@ ${SCRIPTSDIR}/statusbar &
 # Launch clipcat daemon
 clipcatd &
 
-# Launch swww (wallpaper manager)
-swww-daemon &
-#hyprpaper &
+# Launch awww (wallpaper manager)
+awww-daemon &
 
 # Xauthority
 ${SCRIPTSDIR}/xauthority &
