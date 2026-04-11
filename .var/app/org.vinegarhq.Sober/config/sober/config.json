@@ -13,10 +13,6 @@
     "enable_gamemode": false,
     "enable_hidpi": true,
     "fflags": {
-        "DFIntCSGLevelOfDetailSwitchingDistance": "250",
-        "DFIntCSGLevelOfDetailSwitchingDistanceL12": "500",
-        "DFIntCSGLevelOfDetailSwitchingDistanceL23": "750",
-        "DFIntCSGLevelOfDetailSwitchingDistanceL34": "1000",
         "DFIntConnectionMTUSize": "900",
         "DFIntDebugFRMQualityLevelOverride": "1",
         "DFIntMinimalNetworkPrediction": "0.1",
