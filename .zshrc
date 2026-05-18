@@ -166,7 +166,10 @@ alias cargoupdate='echo "\n\033[0;35m:: \033[1;37mupdating crates...\n\033[0;01m
 alias pc='p && cargoupdate'
 
 #oneshot
-alias oneshot='doas /src/OneShot-C/oneshot -i wlp1s0 -K'
+alias oneshot='doas /src/OneShot-C/oneshot -i wlan0'
+
+#oneshot-extended
+alias ose='doas python3 /src/OneShot-Extended/ose.py -i wlan0'
 
 #yazi file manager
 alias x='yazi'
@@ -239,6 +242,7 @@ crab-fetch
 
 eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+eval "$(moonlight-cli completions zsh)"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
