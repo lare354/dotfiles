@@ -198,14 +198,8 @@ alias unlock="sudo rm /var/lib/pacman/db.lck"
 alias cl='clear'
 alias lc='clear'
 
-#cd using xplr
-alias xcd=̈́'cd "$(xplr --print-pwd-as-result)"'
-
 #display images in terminal (kitty)
 alias icat='kitty +kitten icat'
-
-#launch nvim with file selection using xplr
-alias nv='nvim $(xplr)'
 
 #free
 alias free="free -mt"

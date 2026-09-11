@@ -1,37 +1,21 @@
-vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
-vim.g.mapleader = " "
 
--- bootstrap lazy and all plugins
-local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
+local rocks_config = {
+    rocks_path = vim.env.HOME .. "/.local/share/nvim/rocks",
+}
 
-if not vim.uv.fs_stat(lazypath) then
-  local repo = "https://github.com/folke/lazy.nvim.git"
-  vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
-end
+vim.g.rocks_nvim = rocks_config
 
-vim.opt.rtp:prepend(lazypath)
+local luarocks_path = {
+    vim.fs.joinpath(rocks_config.rocks_path, "share", "lua", "5.1", "?.lua"),
+    vim.fs.joinpath(rocks_config.rocks_path, "share", "lua", "5.1", "?", "init.lua"),
+}
+package.path = package.path .. ";" .. table.concat(luarocks_path, ";")
 
-local lazy_config = require "configs.lazy"
+local luarocks_cpath = {
+    vim.fs.joinpath(rocks_config.rocks_path, "lib", "lua", "5.1", "?.so"),
+    vim.fs.joinpath(rocks_config.rocks_path, "lib64", "lua", "5.1", "?.so"),
+}
+package.cpath = package.cpath .. ";" .. table.concat(luarocks_cpath, ";")
 
--- load plugins
-require("lazy").setup({
-  {
-    "NvChad/NvChad",
-    lazy = false,
-    branch = "v2.5",
-    import = "nvchad.plugins",
-  },
+vim.opt.runtimepath:append(vim.fs.joinpath(rocks_config.rocks_path, "lib", "luarocks", "rocks-5.1", "rocks.nvim", "*"))
 
-  { import = "plugins" },
-}, lazy_config)
-
--- load theme
-dofile(vim.g.base46_cache .. "defaults")
-dofile(vim.g.base46_cache .. "statusline")
-
-require "options"
-require "nvchad.autocmds"
-
-vim.schedule(function()
-  require "mappings"
-end)
