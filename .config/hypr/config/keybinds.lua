@@ -7,29 +7,6 @@
 -- Source: ~/.config/hypr/config/defaults.conf — convert this file to Lua and ensure it is on Lua's package.path.
 require("config.defaults")
 
-local HOME = "/home/lare"
-
-local scriptsDir = HOME .. "/.config/hypr/scripts"
-local hyprDir = HOME .. "/.config/hypr"
-
--- Commonly used programs
-local fileman = "thunar"
-local term = "kitty"
-local browser = "librewolf"
-local browser2 = "thorium-browser-avx2"
-local editor = "micro"
-local menu = "rofi -show drun"
-local snipp = "grimblast copy area"
-local rbw = "rofi-rbw"
-local clip = "clipcat-menu"
-
-local idlehandler = "swayidle -w timeout 300 'swaylock -f -c 000000' timeout 300 '' resume '' before-sleep 'swaylock -f -c 000000'"
-
-local waller = HOME .. "/.local/bin/waller"
-local volume = scriptsDir .. "/volume"
-local screenshot = scriptsDir .. "/screenshot"
-local lock = scriptsDir .. "/lockscreen"
-
 -- https://wiki.hyprland.org/Configuring/Binds/
 
 local mainMod = "SUPER"

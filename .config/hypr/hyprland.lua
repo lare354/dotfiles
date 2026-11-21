@@ -2,26 +2,18 @@
 
 local mainMod = "SUPER"
 
--- Source: ~/.config/hypr/config/colours.conf — convert this file to Lua and ensure it is on Lua's package.path.
 require("config.colours")
--- Source: ~/.config/hypr/config/defaults.conf — convert this file to Lua and ensure it is on Lua's package.path.
 require("config.defaults")
--- Source: ~/.config/hypr/config/monitor.conf — convert this file to Lua and ensure it is on Lua's package.path.
 require("config.monitor")
--- Source: ~/.config/hypr/config/decorations.conf — convert this file to Lua and ensure it is on Lua's package.path.
 require("config.decorations")
--- Source: ~/.config/hypr/config/animations.conf — convert this file to Lua and ensure it is on Lua's package.path.
 require("config.animations")
--- Source: ~/.config/hypr/config/environment.conf — convert this file to Lua and ensure it is on Lua's package.path.
 require("config.environment")
--- Source: ~/.config/hypr/config/autostart.conf — convert this file to Lua and ensure it is on Lua's package.path.
 require("config.autostart")
--- Source: ~/.config/hypr/config/keybinds.conf — convert this file to Lua and ensure it is on Lua's package.path.
 require("config.keybinds")
+require("config.windowrules")
+
 
 -- For all categories, see https://wiki.hyprland.org/Configuring/Variables/
-
--- TODO: manual review — top-level key 'blurls = waybar' has no enclosing section
 
 hl.config({
     input = {
